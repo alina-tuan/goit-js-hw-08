@@ -2,7 +2,7 @@ import Player from "@vimeo/player";
 import throttle from "lodash.throttle";
 
 const iframe = document.querySelector("iframe");
-const player = new Vimeo.Player(iframe);
+const player = new Player(iframe);
 
 // час відтворення оновлюється у сховищі не частіше, ніж раз на секунду
 // зберігається час відтворення у локальне сховище - ключ для сховища "videoplayer-current-time"
